@@ -3,7 +3,10 @@
         <title>Login page</title>
     </head>
     <body>
-        <h1>Simple Login Page</h1>
+        <h1>Login</h1>
+        <script language="javascript">
+            var login = 0;
+        </script>
         <form name="login">
             Username<input type="text" name="userid"/>
             Password<input type="password" name="pswrd"/>
@@ -15,6 +18,7 @@
                 /*the following code checkes whether the entered userid and password are matching*/
                 if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
                     window.open('target.html')/*opens the target page while Id & password matches*/
+                    var login = 1;
                 }
                 else {
                     alert("Error Password or Username")/*displays error message*/
