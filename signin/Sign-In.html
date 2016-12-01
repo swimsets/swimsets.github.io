@@ -1,3 +1,25 @@
-<!DOCTYPE HTML> <html> <head> <title>Sign-In</title> <link rel="stylesheet" type="text/css" href="style-sign.css"> </head> <body id="body-color"> <div id="Sign-In"> <fieldset style="width:30%"><legend>LOG-IN HERE</legend> <form method="POST" action="connectivity.php"> User <br><input type="text" name="user" size="40"><br> Password <br><input type="password" name="pass" size="40"><br> <input id="button" type="submit" name="submit" value="Log-In"> </form> </fieldset> </div> </body> </html> 
-
-Read more: http://mrbool.com/how-to-create-a-login-page-with-php-and-mysql/28656#ixzz4Rd0JnbjY
+<!DOCTYPE HTML> <html> <html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body>
+        <h1>Simple Login Page</h1>
+        <form name="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('target.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+    </body>
+</html>
