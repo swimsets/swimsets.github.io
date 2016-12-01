@@ -22,3 +22,14 @@ ul {
 a {
 color: red;
 }
+h1 {
+  font-size: 70px;
+}
+@media (max-width: 500px) {
+  h1 {
+  font-size: 36;
+  }
+  li {
+display: block;
+    padding: 5px;
+  }
