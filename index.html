@@ -5,9 +5,7 @@
 <title>
 Swim Sets
 </title>
-    <script>
-       alert('Welcome!') 
-    </script>
+ 
  <style>
        ul {
       padding: 10px;
@@ -28,6 +26,7 @@ Swim Sets
 <body>
     <script language='javascript'>
         var login = 0;
+        var pagevisits = pagevisits + 1;
     </script>
 <header>
 <h1> Welcome to Swim Sets!</h1>\
@@ -39,9 +38,13 @@ Swim Sets
        </ul>
    </header>
 <h4>New to swim sets? Create an account or login as a guest!</h4>
-<input type='email' placeholder='Request a new account'>
-<input type='submit'>
-    <button>Like</button>
+    <p>Page Views</p>
+<h4 id="Views"></h4>
+
+<script>
+document.getElementById("Views").innerHTML = pagevisits;
+</script>
+
 
 </body>
 </html>
