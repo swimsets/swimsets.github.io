@@ -19,12 +19,15 @@
         
             
         <form name="login">
-            
+             <input type="text" placeholder='Username' name="userid"/>
+            <input type="password" placeholder='Password' name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
         </form>
         <script language="javascript">
             function check(form) { 
              
-                if(form.Username.value == "william" && form.Password.value == "tyrrell") {
+                if(form.userid.value == "william" && form.pswrd.value == "tyrrell") {
                     window.open('williamhome.html')
                     alert('Loged in!')/*opens the target page while Id & password matches*/
                     var login = 1;
