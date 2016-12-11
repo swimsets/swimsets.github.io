@@ -49,12 +49,7 @@ Swim Sets
         var williamlogin = 0;
     </script>
 <header>
- <script type="text/javascript">
-    document.getElementById('frmSearch').onsubmit = function() {
-        window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
-        return false;
-    }
-</script>
+
  <ul>
       <li><a href='/publicworkouts/home.html'>Public Workouts</a></li>
       <li><a href='Sign-In.html'>Login</a></li>
@@ -72,7 +67,12 @@ bottom:20px; left: 691px; top: 153px; height: 23px" />
 
    </header>
 <h4>New to swim sets? Create an account or login as a guest!</h4>
-    
+   <script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=swimsets.github.io ' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>  
 <script>
  window.scrollTo(0, 1); 
  </script>
