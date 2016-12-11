@@ -51,9 +51,9 @@ Swim Sets
 <header>
 
  <ul>
-      <li><a href='/publicworkouts/home.html'>Public Workouts</a></li>
-      <li><a href='Sign-In.html'>Login</a></li>
-      <li><a href='about.html'>About</a></li>
+	 <li><button type='button' id='publicworkouts'>Public Workouts</button></li>
+	 <li><button type='button' id='login'>Login</button></li>
+	 <li><button type='button' id='about'>About</button></li>
  
        </ul>
 <img src='welcome.png'>
@@ -90,6 +90,17 @@ Swim Sets
 <!-- end of freefind search box html --> 
 <script>
  window.scrollTo(0, 1); 
+	document.getElementById('about').onclick = function() {
+   window.open('about.html');
+}
+	window.scrollTo(0, 1); 
+	document.getElementById('login').onclick = function() {
+   window.open('Sign-In.html');
+}
+	window.scrollTo(0, 1); 
+	document.getElementById('publicworkouts').onclick = function() {
+   window.open('publicworkouts/home.html');
+}
  </script>
 </body>
 </html>
