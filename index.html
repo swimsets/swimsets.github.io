@@ -41,25 +41,45 @@ Swim Sets
      img {
          display: inline;
      }
+	 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
     </style>
 </head>
 <body>
     <script language='javascript'>
        document.cookie = "willlogin=0";
     </script>
-<header>
 
+	<header>
+<!--
  <ul>
 	 <li><button type='button' id='publicworkouts'>Public Workouts</button></li>
 	 <li><button type='button' id='login'>Login</button></li>
 	 <li><button type='button' id='about'>About</button></li>
  
        </ul>
+		-->
 <img src='welcome.png'>
     <h1> </h1>
    <img src='swimmer.jpg' hight='355' width='370'>
+	
 
    </header>
+		 <div class="container">
+ 
+   <div class="dropdown">
+  <span>Menu</span>
+  <div class="dropdown-content">
+   <a href='Scratchprojects.html'>Scratch Projects</a>
+  </div>
+   </div>
 <h4>New to swim sets? Create an account or login as a guest!</h4>
  <!-- start of freefind search box html -->
 <table cellpadding=0 cellspacing=0 border=0 >
