@@ -30,7 +30,14 @@
                 if(form.userid.value == "william" && form.pswrd.value == "tyrrell") {
                     window.open ('/willuser/williamhome.html');
                     alert('Loged in!')/*opens the target page while Id & password matches*/
-                  document.cookie = "willlogin = 1";
+                  var now = new Date();
+var time = now.getTime();
+time += 3600 * 1000;
+now.setTime(time);
+document.cookie = 
+'willlogin=' + 1 + 
+'; expires=' + now.toUTCString() + 
+'; path=/';
                 }
                 else {
                     alert("Error Password or Username")
