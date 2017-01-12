@@ -36,12 +36,13 @@ overflow-y: scroll;
   </head>
 <body>
   
- <script>
-if( document.cookie.indexOf("willlogin=") < -1) {
-    alert("Not loged in!");
-    location.href = "https://swimsets.github.io";
-}
-    </script>
+<script type="text/javascript" language="JavaScript">
+var acookie = ReadCookie("willlogin");
+if(acookie.length == 0)
+ { 
+  location.href='https://swimsets.github.io';
+ }
+</script>
   <h1>Welcome!</h1>
   <table id='Will Table'>
     <tr>
