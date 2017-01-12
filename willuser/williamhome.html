@@ -37,7 +37,7 @@ overflow-y: scroll;
 <body>
   
  <script>
-if( document.cookie.indexOf("willlogin=") < 0) {
+if( document.cookie.indexOf("willlogin=") < -1) {
     alert("Not loged in!");
     location.href = "https://swimsets.github.io";
 }
