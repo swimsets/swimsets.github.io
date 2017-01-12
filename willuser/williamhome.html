@@ -37,9 +37,8 @@ overflow-y: scroll;
 <body>
   
  <script type='javascript'>
-var x = readCookie('willlogin')
-if x = 1 {
-	alert('Welcome William!')
+if (document.cookie.indexOf('willlogin') > -1 ) {
+  alert("Welcome!");
 }
 else {
 window.location('swimsets.github.io/Sign-In.html')
