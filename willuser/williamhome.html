@@ -35,13 +35,15 @@ overflow-y: scroll;
 <meta name="apple-mobile-web-app-capable" content="yes" />
   </head>
 <body>
-  <script type='text/javascript'>
-function checkCookie() {
-  if(document.cookie.indexOf("willlogin") == -1){
-  alert("You are not loged in!");
-}
+<script type="text/javascript>
 
-  </script>
+if(document.cookie.indexOf("willlogin") == -1) {
+  alert("There is no cookie by the name of aCookie");
+}
+else{
+  alert("The aCookie cookie is set!");
+}
+</script>
   <h1>Welcome!</h1>
   <table id='Will Table'>
     <tr>
