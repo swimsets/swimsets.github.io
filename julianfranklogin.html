@@ -1,1 +1,50 @@
-
+<!DOCTYPE HTML> <html> <html>
+    <head>
+        <meta name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Williams Login page</title>
+        <style>
+             body {
+         background: url('https://phenomenex.files.wordpress.com/2016/01/water.jpg');
+     }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+        <h1>Login</h1>
+       
+            
+        <form name="login">
+             <input type="text" placeholder='Username' name="userid"/>
+            <input type="password" placeholder='Password' name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { 
+             
+                if(form.userid.value == "julian" && form.pswrd.value == "frank") {
+                    window.open ('/julianfrank/home.html');
+                    alert('Loged in!')/*opens the target page while Id & password matches*/
+                  var now = new Date();
+var time = now.getTime();
+time += 3600 * 1000;
+now.setTime(time);
+document.cookie = 
+'julianfranklogin=' + 1 + 
+'; expires=' + now.toUTCString() + 
+'; path=/';
+                }
+                else {
+                    alert("Error Password or Username")
+                }
+            }
+           
+        </script>
+        <p>New to Swim Sets?</p> <a href='signup.html'> Sign up!</a>
+            </tr>
+        </table>
+    </body>
+</html>
