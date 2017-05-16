@@ -1,106 +1,65 @@
 <DOCTYPE html>
-<html>
+<html manifest="pace.appcache">
 <head>
-<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style"
-    content="black-translucent" />
 
- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-
-    <link rel="stylesheet" type="text/css" href="main.css">
-<title>
-Swim Sets
-</title>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-88418252-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
- <style>
-       ul {
-      padding: 10px;
-        background-color: black;
-      
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-    a {
-        color: red;
-     }
-     body {
-         background: url('https://phenomenex.files.wordpress.com/2016/01/water.jpg');
-    
-
-     }
-     img {
-         display: inline;
-     }
-	 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-	 .dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-	
-		 
-    </style>
+ <link rel="stylesheet" type="text/css" href="main.css">
+ <title>Pace Calculator</title>
+ <script>
+ function calc500() {
+    var Time = document.getElementById("inputOne");
+ alert(("Here is your 100 time at a 500 pace: ") + Time.value / 5 + (".  Remember to divide by 60 to get minutes!"));
+ }
+   function calc50() {
+    var Time = document.getElementById("inputTwo");
+ alert(("Here is your 50 time at a 500 pace: ") + Time.value / 10 + (".  Remember to divide by 60 to get minutes!"));
+ }
+  function calc200() {
+    var Time = document.getElementById("inputThree");
+ alert(("Here is your 200 time at a 500 pace: ") + Time.value / 5 * 2 + (".  Remember to divide by 60 to get minutes!"));
+ }
+  function calcSec() {
+    var Time = document.getElementById("inputFour");
+ alert(("Here is your time in seconds: ") + Time.value * 60 + (".  Now go to a pace calculator and enter your time!"));
+ }
+  function calcMin() {
+    var Time = document.getElementById("inputFive");
+ alert(("Here is your time in minutes : ") + Time.value / 60 + (". Now go out and swim at that time!"));
+ }
+ </script>
+ <meta name="viewport" content="user-scalable=no, width=device-width" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+ <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
 <body>
-    <script language='javascript'>
-       
-    </script>
 
-	<header>
-<!--
- <ul>
-	 <li><button type='button' id='publicworkouts'>Public Workouts</button></li>
-	 <li><button type='button' id='login'>Login</button></li>
-	 <li><button type='button' id='about'>About</button></li>
- 
-       </ul>
-		-->
-<img src='welcome.png'>
-    <h1> </h1>
-   <img src='swimmer.jpg' hight='355' width='370'>
-	
+ <h1>Pace Calculator</h1>
 
-   </header>
-		 <div class="container">
- 
-   <div class="dropdown">
-  <img src='https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png' >
-  <div class="dropdown-content">
-   <a href='about.html'>About</a>
-	  <p></p>
-	  <a href='publicworkouts/home.html'>Public Workouts</a>
-	  <p></p>
-	  <a href='privatelogin.html'>Login</a>
-	  <p></p>
-	  <a href="https://swimsets.github.io/pace-calculator">Pace Calculator (Beta)</a>
-  </div>
-   </div>
-<h4>New to swim sets? Create an account or login as a guest!</h4>
- <!-- start of freefind search box html -->
 
-<!-- end of freefind search box html --> 
+<form>
+ <h2>100 at a 500 pace calculator</h2>
+ <h3>Enter 500 time in seconds:</h3> <input type="number" id="inputOne" value="">
+ <button onclick="calc500()">CALCULATE</button>
+</form>
 
+ <form>
+ <h2>50 at a 500 pace calculator</h2>
+  <h3>Enter 500 time in seconds: </h3><input type="number" id="inputTwo" value="">
+ <button onclick="calc50()">CALCULATE</button>
+</form>
+ <form>
+ <h2>200 at a 500 pace calculator</h2>
+  <h3>Enter 500 time in seconds: </h3><input type="number" id="inputThree" value="">
+ <button onclick="calc200()">CALCULATE</button>
+</form>
+  <form>
+ <h2>Convert minutes to seconds</h2>
+   <h3>Enter time in this format: 0.00 :</h3> <input type="number" id="inputFour" value="">
+ <button onclick="calcSec()">CALCULATE</button>
+</form>
+  <form>
+ <h2>Convert seconds to minute</h2>
+<h3>Enter time in seconds (get time from one of the calculators above!) :</h3> <input type="number" id="inputFive" value="">
+ <button onclick="calcMin()">CALCULATE</button>
+</form>
 </body>
 </html>
