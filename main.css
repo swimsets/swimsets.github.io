@@ -1,35 +1,21 @@
 body {
-text-align: center;
-background: src='water.jpg';
+background: url("https://phenomenex.files.wordpress.com/2016/01/water.jpg");
 }
 input {
-  border: 0;
-  padding: 15px;
-  font-size: 18px;
+  border: 2;
+  padding: 3px;
+  font-size: 15px;
 }
-input[type='submit] {
+button {
 background: red;
 color: white;
 }
-ul {
-      padding: 10px;
-      
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-a {
-color: red;
-}
 h1 {
-  font-size: 70px;
+color: orange;
 }
-@media (max-width: 500px) {
-  h1 {
-  font-size: 36;
-  }
-  li {
-display: block;
-    padding: 5px;
-  }
+h2 {
+  color: orange;
+}
+h3 {
+  color: orange;
+}
